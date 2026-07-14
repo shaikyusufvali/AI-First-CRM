@@ -1,16 +1,410 @@
-# React + Vite
+# 🚀 AI First CRM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+## AI Powered Customer Relationship Management System
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A modern Full Stack CRM application built using **FastAPI**, **React**, **MySQL**, **Material UI**, and **Recharts**.
 
-## React Compiler
+Designed to manage Healthcare Professionals (HCPs) efficiently with a clean dashboard, analytics, search, pagination, and export functionality.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?style=for-the-badge&logo=fastapi)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql)
+![MaterialUI](https://img.shields.io/badge/Material_UI-UI-007FFF?style=for-the-badge&logo=mui)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+</div>
+
+---
+
+# 📌 Project Overview
+
+AI First CRM is a Full Stack CRM application developed for managing Healthcare Professionals (HCPs).
+
+The application provides an intuitive dashboard, complete CRUD operations, analytics, search, pagination, and Excel export.
+
+It demonstrates real-world Full Stack development using FastAPI and React.
+
+---
+
+# ✨ Features
+
+## Authentication
+
+- Login Screen
+- Protected Routes
+- Logout
+
+## HCP Management
+
+- Add HCP
+- Edit HCP
+- Delete HCP
+- View HCP Details
+
+## Dashboard
+
+- Total HCP Count
+- Total Cities
+- Total Specialties
+- Recent HCPs
+- Bar Chart
+- Pie Chart
+
+## Utilities
+
+- Search
+- Pagination
+- Export to Excel
+- Responsive UI
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React.js
+- React Router DOM
+- Material UI
+- Axios
+- Recharts
+- File Saver
+- XLSX
+
+## Backend
+
+- FastAPI
+- SQLAlchemy
+- Pydantic
+- Uvicorn
+
+## Database
+
+- MySQL
+
+## Development Tools
+
+- VS Code
+- Git
+- GitHub
+- Postman
+- Swagger UI
+
+---
+
+# 📂 Project Structure
+
+```
+
+AI-First-CRM/
+│
+├── backend/
+│ ├── app/
+│ │ ├── database/
+│ │ ├── models/
+│ │ ├── routers/
+│ │ ├── schemas/
+│ │ └── main.py
+│
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── layouts/
+│ │ ├── pages/
+│ │ ├── services/
+│ │ └── App.jsx
+│
+└── README.md
+
+```
+
+---
+
+# ⚙ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/shaikyusufvali/AI-First-CRM.git
+```
+
+```
+cd AI-First-CRM
+```
+
+---
+
+# Backend Setup
+
+```
+cd backend
+```
+
+Create Virtual Environment
+
+```
+python -m venv venv
+```
+
+Activate Environment
+
+Windows
+
+```
+venv\Scripts\activate
+```
+
+Install Packages
+
+```
+pip install -r requirements.txt
+```
+
+Run Backend
+
+```
+uvicorn app.main:app --reload
+```
+
+Backend URL
+
+```
+http://127.0.0.1:8000
+```
+
+Swagger
+
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+# Frontend Setup
+
+```
+cd frontend
+```
+
+Install Packages
+
+```
+npm install
+```
+
+Run
+
+```
+npm run dev
+```
+
+Frontend URL
+
+```
+http://localhost:5173
+```
+
+---
+
+# Database
+
+Database Used
+
+- MySQL
+
+Tables
+
+- hcp
+
+Fields
+
+- id
+- name
+- specialty
+- hospital
+- city
+- email
+- phone
+
+---
+
+# REST API Endpoints
+
+GET
+
+```
+/hcp/
+```
+
+POST
+
+```
+/hcp/
+```
+
+PUT
+
+```
+/hcp/{id}
+```
+
+DELETE
+
+```
+/hcp/{id}
+
+```
+---
+
+# 📊 Dashboard
+
+The Dashboard provides a quick overview of CRM data.
+
+## Dashboard Widgets
+
+- 📌 Total HCPs
+- 🌍 Total Cities
+- 🩺 Total Specialties
+- 📋 Recent HCPs
+
+## Charts
+
+### 📊 Bar Chart
+
+Displays HCP distribution by City.
+
+### 🥧 Pie Chart
+
+Displays HCP distribution by Specialty.
+
+---
+
+# 📄 HCP Management
+
+The HCP Module supports complete CRUD operations.
+
+## Available Features
+
+- Add HCP
+- Update HCP
+- Delete HCP
+- View HCP Details
+- Search HCP
+- Pagination
+- Export to Excel
+
+---
+
+# 🎨 UI Features
+
+- Material UI Components
+- Responsive Layout
+- Professional Dashboard
+- Sidebar Navigation
+- Navbar
+- Login Screen
+- Protected Routes
+
+---
+
+# 📸 Screenshots
+
+## Login Page
+
+> Add Screenshot Here
+
+```
+screenshots/login.png
+```
+
+---
+
+## Dashboard
+
+> Add Screenshot Here
+
+```
+screenshots/dashboard.png
+```
+
+---
+
+## HCP Management
+
+> Add Screenshot Here
+
+```
+screenshots/hcp.png
+```
+
+---
+
+## Charts
+
+> Add Screenshot Here
+
+```
+screenshots/charts.png
+```
+
+---
+
+# 🚀 Future Enhancements
+
+- JWT Authentication
+- Role Based Access
+- Email Notifications
+- Advanced Filters
+- Import Excel
+- PDF Export
+- Dark Mode
+- Audit Logs
+- AI Insights
+- Docker Deployment
+- Cloud Deployment
+- Unit Testing
+
+---
+
+# 💼 Skills Demonstrated
+
+- React.js
+- FastAPI
+- REST API Development
+- SQLAlchemy ORM
+- MySQL
+- CRUD Operations
+- Material UI
+- Axios
+- Recharts
+- Excel Export
+- Component Based Architecture
+
+---
+
+# 👨‍💻 Author
+
+**Shaik Yusuf Vali**
+
+- GitHub: https://github.com/shaikyusufvali
+- LinkedIn: https://www.linkedin.com/in/shaik-yusuf-vali/
+
+---
+
+# ⭐ Support
+
+If you like this project,
+
+Please ⭐ Star this repository.
+
+---
+
+# 📜 License
+
+This project is developed for learning and portfolio purposes.
+
+© 2026 Shaik Yusuf Vali. All Rights Reserved.
