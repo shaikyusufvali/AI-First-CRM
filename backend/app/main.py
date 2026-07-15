@@ -1,17 +1,21 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from app.database.db import Base, engine
 from app.models.hcp import HCP
-from app.routers.hcp import router as hcp_router
-from fastapi.middleware.cors import CORSMiddleware
 
-# Create tables
+from app.routers.hcp import router as hcp_router
+from app.routers.ai import router as ai_router
+
+# Create Database Tables
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="AI First CRM",
     version="1.0.0"
 )
+
+# CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -20,8 +24,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include Routers
+# Routers
 app.include_router(hcp_router)
+app.include_router(ai_router)
 
 
 @app.get("/")
@@ -36,6 +41,8 @@ def health():
     return {
         "status": "healthy"
     }
+
+
 if __name__ == "__main__":
     import uvicorn
 

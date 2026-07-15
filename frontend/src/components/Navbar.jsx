@@ -3,6 +3,7 @@ import {
   Toolbar,
   Typography,
   Button,
+  Box,
 } from "@mui/material";
 
 import { useNavigate } from "react-router-dom";
@@ -27,17 +28,45 @@ export default function Navbar() {
           AI First CRM 🚀
         </Typography>
 
-        <Button
-          color="inherit"
-          variant="outlined"
-          onClick={handleLogout}
+        <Box
           sx={{
-            borderColor: "white",
-            color: "white",
+            display: "flex",
+            gap: 2,
           }}
         >
-          Logout
-        </Button>
+          <Button
+            color="inherit"
+            onClick={() => navigate("/")}
+          >
+            Dashboard
+          </Button>
+
+          <Button
+            color="inherit"
+            onClick={() => navigate("/hcp")}
+          >
+            HCP
+          </Button>
+
+          <Button
+            color="inherit"
+            onClick={() => navigate("/ai-chat")}
+          >
+            🤖 AI Assistant
+          </Button>
+
+          <Button
+            color="inherit"
+            variant="outlined"
+            onClick={handleLogout}
+            sx={{
+              borderColor: "white",
+              color: "white",
+            }}
+          >
+            Logout
+          </Button>
+        </Box>
       </Toolbar>
     </AppBar>
   );

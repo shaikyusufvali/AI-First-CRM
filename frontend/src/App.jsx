@@ -4,22 +4,19 @@ import MainLayout from "./layouts/MainLayout";
 import Dashboard from "./pages/Dashboard";
 import HCP from "./pages/HCP";
 import Login from "./pages/Login";
+import AIChat from "./pages/AIChat";
 
 import ProtectedRoute from "./components/ProtectedRoute";
 
-
 export default function App() {
-
   return (
-
     <Routes>
 
-      {/* Login Page */}
-      <Route 
-        path="/login" 
-        element={<Login />} 
+      {/* Login */}
+      <Route
+        path="/login"
+        element={<Login />}
       />
-
 
       {/* Protected Pages */}
       <Route
@@ -31,23 +28,26 @@ export default function App() {
         }
       >
 
-        <Route 
-          index 
-          element={<Dashboard />} 
+        {/* Dashboard */}
+        <Route
+          index
+          element={<Dashboard />}
         />
 
-
+        {/* HCP */}
         <Route
           path="hcp"
           element={<HCP />}
         />
 
+        {/* AI Assistant */}
+        <Route
+          path="ai-chat"
+          element={<AIChat />}
+        />
 
       </Route>
 
-
     </Routes>
-
   );
-
 }
