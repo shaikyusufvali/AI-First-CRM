@@ -1,20 +1,19 @@
-# # 🚀 AI First CRM - Healthcare Relationship Management System
+# 🚀 AI First CRM – AI Powered Healthcare Relationship Management System
 
 <div align="center">
 
-## AI Powered Customer Relationship Management System
+# 🤖 AI First CRM
 
-A modern Full Stack CRM application built using **FastAPI**, **React**, **MySQL**, **Material UI**, and **Recharts**.
+A modern **AI-powered Customer Relationship Management (CRM)** application developed for managing Healthcare Professionals (HCPs).
 
-Designed to manage Healthcare Professionals (HCPs) efficiently with a clean dashboard, analytics, search, pagination, and export functionality.
-
----
+Built using **React**, **FastAPI**, **MySQL**, **LangGraph**, **Groq LLM**, **Material UI**, and **Recharts**.
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?style=for-the-badge&logo=fastapi)
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?style=for-the-badge&logo=fastapi)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql)
-![MaterialUI](https://img.shields.io/badge/Material_UI-UI-007FFF?style=for-the-badge&logo=mui)
+![LangGraph](https://img.shields.io/badge/LangGraph-AI-purple?style=for-the-badge)
+![Groq](https://img.shields.io/badge/Groq-LLM-red?style=for-the-badge)
 
 </div>
 
@@ -22,44 +21,65 @@ Designed to manage Healthcare Professionals (HCPs) efficiently with a clean dash
 
 # 📌 Project Overview
 
-AI First CRM is a Full Stack CRM application developed for managing Healthcare Professionals (HCPs).
+AI First CRM is a Full Stack Healthcare CRM application that helps manage Healthcare Professionals (HCPs) efficiently.
 
-The application provides an intuitive dashboard, complete CRUD operations, analytics, search, pagination, and Excel export.
+The application provides:
 
-It demonstrates real-world Full Stack development using FastAPI and React.
+- Secure Login
+- Dashboard Analytics
+- Complete HCP CRUD
+- Search & Pagination
+- Excel Export
+- AI Assistant powered by LangGraph + Groq LLM
+
+This project demonstrates modern Full Stack Development with AI integration.
 
 ---
 
 # ✨ Features
 
-## Authentication
+## 🔐 Authentication
 
-- Login Screen
+- Login
 - Protected Routes
 - Logout
 
-## HCP Management
+---
+
+## 👨‍⚕️ HCP Management
 
 - Add HCP
 - Edit HCP
 - Delete HCP
-- View HCP Details
+- View Details
+- Search
+- Pagination
+- Export Excel
 
-## Dashboard
+---
 
-- Total HCP Count
+## 📊 Dashboard
+
+- Total HCPs
 - Total Cities
 - Total Specialties
 - Recent HCPs
 - Bar Chart
 - Pie Chart
 
-## Utilities
+---
 
-- Search
-- Pagination
-- Export to Excel
-- Responsive UI
+## 🤖 AI Assistant
+
+Integrated using **LangGraph + Groq LLM**
+
+Supports:
+
+- ✅ Log Interaction
+- ✅ Edit Interaction
+- ✅ Meeting Summarization
+- ✅ Entity Extraction
+- ✅ Next Action Recommendation
 
 ---
 
@@ -72,102 +92,97 @@ It demonstrates real-world Full Stack development using FastAPI and React.
 - Material UI
 - Axios
 - Recharts
-- File Saver
 - XLSX
+- File Saver
+
+---
 
 ## Backend
 
 - FastAPI
 - SQLAlchemy
 - Pydantic
+- LangGraph
+- LangChain
+- Groq LLM
 - Uvicorn
+
+---
 
 ## Database
 
 - MySQL
+
+---
 
 ## Development Tools
 
 - VS Code
 - Git
 - GitHub
-- Postman
 - Swagger UI
+- Postman
 
 ---
 
 # 📂 Project Structure
 
-```
-
+```text
 AI-First-CRM/
-│
+
 ├── backend/
-│ ├── app/
-│ │ ├── database/
-│ │ ├── models/
-│ │ ├── routers/
-│ │ ├── schemas/
-│ │ └── main.py
+│
+│   ├── ai/
+│   │   ├── agent.py
+│   │   ├── graph.py
+│   │   ├── tools.py
+│   │   ├── state.py
+│   │   └── prompt.py
+│
+│   ├── app/
+│   │   ├── database/
+│   │   ├── models/
+│   │   ├── routers/
+│   │   ├── schemas/
+│   │   └── main.py
 │
 ├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── layouts/
-│ │ ├── pages/
-│ │ ├── services/
-│ │ └── App.jsx
+│
+│   ├── src/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.jsx
 │
 └── README.md
-
 ```
 
 ---
 
-# ⚙ Installation
+# ⚙️ Installation
 
 ## Clone Repository
 
 ```bash
 git clone https://github.com/shaikyusufvali/AI-First-CRM.git
-```
 
-```
 cd AI-First-CRM
 ```
 
----
+## Backend
 
-# Backend Setup
-
-```
+```bash
 cd backend
-```
 
-Create Virtual Environment
-
-```
 python -m venv venv
-```
 
-Activate Environment
-
-Windows
-
-```
+# Windows
 venv\Scripts\activate
-```
 
-Install Packages
-
-```
 pip install -r requirements.txt
-```
 
-Run Backend
-
-```
-uvicorn app.main:app --reload
+python -m uvicorn app.main:app --reload
 ```
 
 Backend URL
@@ -182,23 +197,13 @@ Swagger
 http://127.0.0.1:8000/docs
 ```
 
----
+## Frontend
 
-# Frontend Setup
-
-```
+```bash
 cd frontend
-```
 
-Install Packages
-
-```
 npm install
-```
 
-Run
-
-```
 npm run dev
 ```
 
@@ -207,18 +212,17 @@ Frontend URL
 ```
 http://localhost:5173
 ```
-
 ---
 
-# Database
+# 🗄 Database
 
-Database Used
+## Database
 
 - MySQL
 
-Tables
+## Table
 
-- hcp
+**hcp**
 
 Fields
 
@@ -232,158 +236,124 @@ Fields
 
 ---
 
-# REST API Endpoints
+# 🌐 REST API Endpoints
 
-GET
+## Authentication
+
+- Login
+
+## HCP APIs
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/hcp/` | Get all HCPs |
+| POST | `/hcp/` | Add HCP |
+| PUT | `/hcp/{id}` | Update HCP |
+| DELETE | `/hcp/{id}` | Delete HCP |
+
+---
+
+## 🤖 AI APIs
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/ai/chat` | AI Assistant |
+
+Example Request
+
+```json
+{
+  "message": "Log interaction with Dr Sharma"
+}
+```
+
+Example Response
+
+```json
+{
+  "tool_result": {
+    "tool": "Log Interaction",
+    "status": "success"
+  },
+  "llm": "..."
+}
+```
+
+---
+
+# 🤖 AI Workflow
+
+The AI Assistant is powered by **LangGraph**.
+
+Workflow:
 
 ```
-/hcp/
+User Query
+      │
+      ▼
+FastAPI API
+      │
+      ▼
+LangGraph Router
+      │
+      ├── Log Interaction
+      ├── Edit Interaction
+      ├── Summarize
+      ├── Entity Extraction
+      └── Next Action
+      │
+      ▼
+Groq LLM
+      │
+      ▼
+JSON Response
 ```
 
-POST
-
-```
-/hcp/
-```
-
-PUT
-
-```
-/hcp/{id}
-```
-
-DELETE
-
-```
-/hcp/{id}
-
-```
 ---
 
 # 📊 Dashboard
 
-The Dashboard provides a quick overview of CRM data.
-
-## Dashboard Widgets
+Dashboard includes
 
 - 📌 Total HCPs
 - 🌍 Total Cities
 - 🩺 Total Specialties
 - 📋 Recent HCPs
-
-## Charts
-
-### 📊 Bar Chart
-
-Displays HCP distribution by City.
-
-### 🥧 Pie Chart
-
-Displays HCP distribution by Specialty.
+- 📊 Bar Chart
+- 🥧 Pie Chart
 
 ---
 
 # 📄 HCP Management
 
-The HCP Module supports complete CRUD operations.
-
-## Available Features
+Features
 
 - Add HCP
-- Update HCP
+- Edit HCP
 - Delete HCP
-- View HCP Details
-- Search HCP
+- Search
 - Pagination
-- Export to Excel
-
----
-
-# 🎨 UI Features
-
-- Material UI Components
-- Responsive Layout
-- Professional Dashboard
-- Sidebar Navigation
-- Navbar
-- Login Screen
-- Protected Routes
+- Export Excel
 
 ---
 
 # 📸 Screenshots
 
-## Login Page
+## 🔐 Login Page
 
-> Add Screenshot Here
-
-```
-## 📸 Screenshots
-
-### Login Page
-
-![Login](screenshots/login.png)
-
-### Dashboard
-
-![## 📸 Screenshots
-
-### Login Page
-
-<img width="1349" height="710" alt="image" src="https://github.com/user-attachments/assets/54838359-1077-4296-8499-9915158a6c72" />
-
-
-### Dashboard
-
-<img width="1364" height="689" alt="image" src="https://github.com/user-attachments/assets/5eb404ed-6fe9-4f5c-8073-b8b7c477a191" />
-
-### HCP Management
-
-![HCP<img width="1351" height="722" alt="image" src="https://github.com/user-attachments/assets/f9ad26c7-fd7b-45e1-a738-ef5300cc3725" />
-
-
-### Analytics Charts
-
-![Charts](screenshots/charts.png)
-
-### HCP Management
-
-![HCP](screenshots/hcp.png)
-
-### Analytics Charts
-
-![Charts](screenshots/charts.png)
-```
+<img width="1349" height="710" alt="Login" src="https://github.com/user-attachments/assets/54838359-1077-4296-8499-9915158a6c72" />
 
 ---
 
-## Dashboard
+## 📊 Dashboard
 
-> Add Screenshot Here
-
-```
-screenshots/dashboard.png
-```
+<img width="1364" height="689" alt="Dashboard" src="https://github.com/user-attachments/assets/5eb404ed-6fe9-4f5c-8073-b8b7c477a191" />
 
 ---
 
-## HCP Management
+## 👨‍⚕️ HCP Management
 
-> Add Screenshot Here
-
-```
-screenshots/hcp.png
-```
-
----
-
-## Charts
-
-> Add Screenshot Here
-
-```
-screenshots/charts.png
-```
+<img width="1351" height="722" alt="HCP Management" src="https://github.com/user-attachments/assets/f9ad26c7-fd7b-45e1-a738-ef5300cc3725" />
 
 ---
 
@@ -391,16 +361,14 @@ screenshots/charts.png
 
 - JWT Authentication
 - Role Based Access
+- AI Analytics
 - Email Notifications
-- Advanced Filters
-- Import Excel
 - PDF Export
-- Dark Mode
-- Audit Logs
-- AI Insights
+- Import Excel
 - Docker Deployment
 - Cloud Deployment
-- Unit Testing
+- Audit Logs
+- Dark Mode
 
 ---
 
@@ -409,13 +377,17 @@ screenshots/charts.png
 - React.js
 - FastAPI
 - REST API Development
-- SQLAlchemy ORM
+- SQLAlchemy
 - MySQL
-- CRUD Operations
 - Material UI
 - Axios
 - Recharts
-- Excel Export
+- LangGraph
+- LangChain
+- Groq LLM
+- AI Agent Development
+- CRUD Operations
+- Prompt Engineering
 - Component Based Architecture
 
 ---
@@ -431,7 +403,7 @@ screenshots/charts.png
 
 # ⭐ Support
 
-If you like this project,
+If you found this project useful,
 
 Please ⭐ Star this repository.
 
@@ -439,6 +411,6 @@ Please ⭐ Star this repository.
 
 # 📜 License
 
-This project is developed for learning and portfolio purposes.
+This project is developed for learning, academic submission, and portfolio purposes.
 
 © 2026 Shaik Yusuf Vali. All Rights Reserved.
